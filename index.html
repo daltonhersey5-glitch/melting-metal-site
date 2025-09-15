@@ -60,6 +60,17 @@
       color: #fff;
       cursor: pointer;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -77,6 +88,7 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#quote">Request Quote</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -111,6 +123,16 @@
       <textarea rows="4" placeholder="Describe your project or repair needs..." required></textarea>
       <button type="submit">Send Request</button>
     </form>
+  </section>
+
+  <section id="gallery">
+    <h2>Project Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Welding project 1">
+      <img src="https://via.placeholder.com/300x200" alt="Welding project 2">
+      <img src="https://via.placeholder.com/300x200" alt="Welding project 3">
+      <img src="https://via.placeholder.com/300x200" alt="Welding project 4">
+    </div>
   </section>
 
   <section id="contact">
